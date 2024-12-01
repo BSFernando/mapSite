@@ -1,0 +1,118 @@
+#mapa-laboratorios {
+    display: flex;
+    min-height: 90vh;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D4E3F9;
+}
+
+#mapa-plot-labs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    justify-content: center;
+    width: 100%;
+}
+
+#map-laboratorios-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    gap: 30px;
+    height: 100%;
+    font-size: 30px;
+    width: 40%;
+}
+
+#icones-qualidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 40vh;
+}
+
+#liked-qualidade{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.icones-maps{
+    height: 69px;
+    width: 54px;
+}
+
+#map-all-labs{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#titulo-labs{
+    font-size: 1.163rem;
+    color: var(--color-primary-1);
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#conteudo-labs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 90vh;
+    justify-content: space-around;
+    width: 95%;
+}
+
+#conteudo-labs-row{
+width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+    #mapa-laboratorios {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    #mapa-plot-labs {
+       width: 100%;
+       flex-direction: column;
+       justify-content: space-evenly;
+       min-height: fit-content;
+    }
+    #map-laboratorios-left{
+        width: 95%;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    #map-all-labs{
+        width: 95%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    #conteudo-labs{
+        flex-direction: column;
+        margin: auto;
+    }
+    #liked-qualidade{
+        flex-direction: row;
+        height: fit-content;
+    }
+    #icones-qualidade{
+        flex-direction: row;
+        height: fit-content;
+    }    
+}
