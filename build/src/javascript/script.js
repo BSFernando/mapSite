@@ -40,3 +40,7 @@ $(document).ready(function() {
     //     distance: '20%'
     // });
 });
+
+function removeMsg() { 
+    document.getElementById("msg-maintenance").style.display = "none";
+}
