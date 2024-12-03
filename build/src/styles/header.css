@@ -100,4 +100,8 @@ header {
         list-style: none;
         text-align: center;
     } 
+    #btn-change-language{
+        margin: auto;
+    
+    }
 }
