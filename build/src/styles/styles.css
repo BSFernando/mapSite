@@ -125,6 +125,10 @@ section {
     ;
 }
 
+body[lang=en] [lang]:not([lang=en]),
+body[lang=pt-br] [lang]:not([lang=pt-br]) {
+    display: none;
+}
 @media screen and (max-width: 450px) {
 
     html,
