@@ -46,19 +46,22 @@ function removeMsg() {
 }
 
 function changeLanguage() {
-    var button_language = document.getElementById("btn-change-language")
-    if(button_language.className === 'btn-eng'){
-        button_language.style.backgroundImage = "linear-gradient(to right, #c5c5c5 50%, #22ff82 50%)";
-        button_language.style.boxShadow  = "#7d7d7d 3px -3px 1px 0px inset"
-        button_language.className = 'btn-pt-br'
-        $('[lang="eng"]').hide();
-        $('[lang="pt-br"]').show();
-    } else if(button_language.className === 'btn-pt-br'){
-        button_language.style.backgroundImage = "linear-gradient(to right, #22ff82 50%, #c5c5c5 50%)";
-        button_language.style.boxShadow  = "#7d7d7d -3px -3px 1px 0px inset"
-        button_language.className = 'btn-eng'  
-        $('[lang="pt-br"]').hide();
-        $('[lang="eng"]').show();
-    }
+    var button_language = document.getElementsByClassName('btn-change-language')
+    for(let i=0; i<button_language.length; i++){
 
+        if(button_language[i].lang === 'en'){
+            button_language[i].style.backgroundImage = "linear-gradient(to right, #c5c5c5 50%, #22ff82 50%)";
+            button_language[i].style.boxShadow  = "#7d7d7d 3px -3px 1px 0px inset"
+            button_language[i].lang = 'pt'
+            $('[lang="eng"]').hide();
+            $('[lang="pt-br"]').show();
+        } else if(button_language[i].lang === 'pt'){
+            button_language[i].style.backgroundImage = "linear-gradient(to right, #22ff82 50%, #c5c5c5 50%)";
+            button_language[i].style.boxShadow  = "#7d7d7d -3px -3px 1px 0px inset"
+            button_language[i].lang = 'en'  
+            $('[lang="pt-br"]').hide();
+            $('[lang="eng"]').show();
+        }  
+
+    }
 }

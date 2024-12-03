@@ -52,7 +52,7 @@ header {
     display: none;
 }
 
-#btn-change-language{
+.btn-change-language{
     width: 80px;
     background-image: linear-gradient(to right, #22ff82 50%, #c5c5c5 50%);
     padding: 5px;
@@ -100,8 +100,9 @@ header {
         list-style: none;
         text-align: center;
     } 
-    #btn-change-language{
+    .btn-change-language{
         margin: auto;
     
     }
+
 }
